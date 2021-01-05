@@ -12,9 +12,16 @@ Copy the code or clone the git repository to make your own personal instagarm di
 
 Clone this repo to your machine. If you need help with this part, GitHub has [great documentation](https://help.github.com/articles/fork-a-repo/)
 
-## This is how the extension looks:
+## This is how the bot works:
 
 ![](nikhil_bot.gif)
+
+##Note
+
+Added instagram username and password is for testing purpose only.
+
+
+##Code Editor 
 
 I have done this whole Project in Visual Studio code. if you don't have Visual Studio code setup in ur computer ,download it by [clicking here](https://code.visualstudio.com/Download)
 
