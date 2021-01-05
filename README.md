@@ -6,7 +6,7 @@ copy the code or clone the repository to make your own personal instagarm direct
 ## Technologies I used
 
 - python (selenium package)
-- chromedriver 87 version
+- chromedriver 87 version(for linux)
 
 ## Installation of InstagramDm_bot- To Your Machine.
 
