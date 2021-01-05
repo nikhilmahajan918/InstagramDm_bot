@@ -8,49 +8,37 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 import random
 
-#function InstaDm that sends the dm to any user
-def InstaDm(username,password,person,dm):
-	#chrome driver stored location 
+def Dm_bot(username,password,person,dm):
 	driver = webdriver.Chrome('/home/nikhil/Desktop/Instagram_bot/chromedriver')
-	#accessing instagram url 
 	driver.get("https://www.instagram.com/")
-	#entering username in instagram website that has been passed as parameter of function InstaDm
 	enter_username = WebDriverWait(driver,20).until(EC.presence_of_element_located((By.NAME, 'username')))
 	enter_username.send_keys(username)
 
-    #entering password in instagram website that has been passed as parameter of function InstaDm
 	enter_password = WebDriverWait(driver,20).until(EC.presence_of_element_located((By.NAME, 'password')))
 	enter_password.send_keys(password)
 	enter_password.send_keys(Keys.RETURN)
 	time.sleep(random.randint(1,4))
 
-    #if after login, the instagtam prompts for save password,
-    # this block of code hit enter the not now button
 	try:
 		not_now = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, 'mt3GC')))
 		a= not_now.find_elements_by_tag_name("button")[1]
 		actions = ActionChains(driver)
 		actions.click(a)
 		actions.perform()
-	#if there is no prompt of save password, 
-	#it passes the condition and sends the dm directly to the user 	
 	except:
 		pass
-	#this piece of code click the inbox button
 	finally:
 		inbox = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, 'xWeGp')))
 		actions = ActionChains(driver)
 		actions.click(inbox)
 		actions.perform()
 		time.sleep(random.randint(1,4))
-    #this is for clicking the not now option for sending notification prompt 
 	try:
 		not_now = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, 'mt3GC')))
 		a= not_now.find_elements_by_tag_name("button")[1]
 		actions = ActionChains(driver)
 		actions.click(a)
 		actions.perform()
-	#if there is no prompt of send notifications, it will pass the condition
 	except:
 		pass
 	finally:
@@ -79,7 +67,7 @@ def InstaDm(username,password,person,dm):
 	time.sleep(random.randint(1,3))
 	messagebox.send_keys(Keys.RETURN)
 
-InstaDm("itscoder8295","1234boitesting","virat.kohli","hello sir")
+Dm_bot("itscoder8295","1234boitesting","virat.kohli","hello sir")
 
 
 
