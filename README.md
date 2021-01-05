@@ -1,7 +1,7 @@
 # Instagram Direct message bot 
 
-This is a kind of Instagram bot that will send the direct message to the users using selenium as a python package. It can be useful for the influencers, organization, etc. <br>
-copy the code or clone the repository to make your own personal instagarm direct message bot or if you want me to design any kind of bot, I'll be happy for doing this at just $2
+This is a kind of Instagram bot that will send the direct message to the users that was selected in python file using selenium (python package). It can be useful for the influencers, organizations, or any other large scale business. <br>
+Copy the code or clone the git repository to make your own personal instagarm direct message bot or if you want me to program any kind of bot, I'll be happy for doing it at just $2
 
 ## Technologies I used
 
