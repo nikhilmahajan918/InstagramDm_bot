@@ -16,12 +16,12 @@ Clone this repo to your machine. If you need help with this part, GitHub has [gr
 
 ![](nikhil_bot.gif)
 
-##Note
+## Note
 
 Added instagram username and password is for testing purpose only.
 
 
-##Code Editor 
+## Code Editor 
 
 I have done this whole Project in Visual Studio code. if you don't have Visual Studio code setup in ur computer ,download it by [clicking here](https://code.visualstudio.com/Download)
 
